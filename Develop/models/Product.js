@@ -9,15 +9,46 @@ class Product extends Model {}
 // set up fields and rules for Product model
 Product.init(
   {
-    // define columns
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
   },
-  {
-    sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'product',
-  }
+  product_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+  },
+  price: {
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: false,
+      validate: {
+          min: 0.01
+    }
+  },
+  stock: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      value: 10,
+      validate: {
+          min: 0
+    }
+  },
+  catagory_id: {
+      type: DataTypes.INTEGER,
+      references: {
+          model: 'catagory',
+          key: 'id'
+      }
+  },
+},
+{
+  sequelize,
+  timestamps: false,
+  freezeTableName: true,
+  underscored: true,
+  modelName: 'product',
+}
 );
 
 module.exports = Product;
