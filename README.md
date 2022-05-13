@@ -1,4 +1,4 @@
-# E-Commerce Backend
+## E-Commerce Backend
 
 ![](https://img.shields.io/badge/Javascript-yellow.svg)
 ![](https://img.shields.io/badge/Express-red.svg)
@@ -15,14 +15,14 @@
 * [Contact](#contact)
 
 
-# Description
+## Description
 * Build the back end for an e-commerce site. 
 * Using Express.js API and configure it to use Sequelize to interact with a MySQL database.
 
-# Demo Video
+## Demo Video
+<a href="https://drive.google.com/file/d/10uqdcYzFSup43iwOAjjL_qDzemif4qqt/view">Insomnia Test</a>
 
-
-# Installation
+## Installation
 
 * Download or clone repository
 * Use a text editor to view all coding, Visual Studio Coding is recommended.
@@ -37,7 +37,7 @@
         * <code>npm run seed</code>
 
 
-# Packages Used
+## Packages Used
   * Node.js
   * Express
   * Mysql2
@@ -45,9 +45,10 @@
   * DOTenv
   * Nodemon (optional)
  
-# Contact
-## <a href="https://github.com/JustynSubrai">Github</a>
-## <a href="https://github.com/JustynSubrai/E-Commerce-Backend">Github E-Commerce GitHub Repo</a>
+## Contact
+<a href="https://github.com/JustynSubrai">Github</a><br/>
+
+<a href="https://github.com/JustynSubrai/E-Commerce-Backend">Github E-Commerce GitHub Repo</a>
 
 
 [Return to top](#e-commerce-backend)
